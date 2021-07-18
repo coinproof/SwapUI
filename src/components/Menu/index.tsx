@@ -3,12 +3,10 @@ import { Menu as UikitMenu} from '@becoswap-libs/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
-import useGetPriceData from 'hooks/useGetPriceData'
 import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import useAuth from 'hooks/useAuth'
 import { languageList } from 'constants/localization/languages'
 import links from './config'
-import { BECO } from '../../constants'
 
 const Menu: React.FC = (props) => {
   const { account } = useWeb3React()
