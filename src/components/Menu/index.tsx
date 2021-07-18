@@ -15,8 +15,8 @@ const Menu: React.FC = (props) => {
   const { login, logout } = useAuth()
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
-  const priceData = useGetPriceData()
-  const cakePriceUsd = priceData ? Number(priceData.data[BECO.address].price) : undefined
+  // const priceData = useGetPriceData()
+  const cakePriceUsd = undefined
   const profile = useGetLocalProfile()
 
   return (
