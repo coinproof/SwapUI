@@ -4,8 +4,7 @@ import { BECO } from '../constants'
 
 const useGetDocumentTitlePrice = () => {
   const priceData = useGetPriceData()
-
-  const cakePriceUsd = priceData ? parseFloat(priceData.data[BECO.address].price) : 0
+  const cakePriceUsd = (priceData && priceData.data) ? parseFloat(priceData.data[BECO.address].price) : 0
 
   const cakePriceUsdString =
     Number.isNaN(cakePriceUsd) || cakePriceUsd === 0
