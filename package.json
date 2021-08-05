@@ -4,7 +4,7 @@
   "homepage": ".",
   "private": true,
   "dependencies": {
-    "@becoswap-libs/sdk": "1.0.3",
+    "@becoswap-libs/sdk": "shibanova/shibanova-swap-sdk-mainnet",
     "@becoswap-libs/uikit": "1.0.2",
     "@binance-chain/bsc-connector": "^1.0.0",
     "@crowdin/crowdin-api-client": "^1.8.16",
