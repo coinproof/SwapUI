@@ -304,7 +304,7 @@ const Swap = () => {
           />
           <PageHeader
             title={TranslateString(8, 'Exchange')}
-            description={TranslateString(1192, 'Trade tokens in an instant')}
+            description={TranslateString(1192, 'We suggest using at least 2% slippage to swap NOVA.')}
           />
           
           <CardBody>

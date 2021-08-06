@@ -13,7 +13,7 @@ type ApiResponse = {
 const priceContracts: {novaAddress: string, busdAddress: string, lpAddress:string} = {
   novaAddress: '0x56E344bE9A7a7A1d27C854628483Efd67c11214F',
   busdAddress: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-  lpAddress: ''
+  lpAddress: '0xe20E810Cbe229E9AbAd210adfFF59B1EB723acEa'
 }
 
 

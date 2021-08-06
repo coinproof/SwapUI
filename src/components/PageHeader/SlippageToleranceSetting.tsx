@@ -32,8 +32,8 @@ const Options = styled.div`
 
 const predefinedValues = [
   { label: '0.1%', value: 0.1 },
-  { label: '0.5%', value: 0.5 },
-  { label: '1%', value: 1 },
+  { label: '2.1%', value: 2.1 },
+  { label: '5%', value: 5 },
 ]
 
 type SlippageToleranceSettingsModalProps = {
