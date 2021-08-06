@@ -37,7 +37,12 @@ const PageHeader = ({ title, description, children }: PageHeaderProps) => {
             </Text>
           )}
         </Details>
-        <IconButton variant="text" onClick={onPresentSettings} title={TranslateString(1200, 'Settings')}>
+        <IconButton
+          style={{ width: 0, boxShadow: 'none !important' }}
+          variant="text"
+          onClick={onPresentSettings}
+          title={TranslateString(1200, 'Settings')}
+        >
           <CogIcon width="24px" color="currentColor" />
         </IconButton>
         {/* <IconButton
@@ -45,7 +50,7 @@ const PageHeader = ({ title, description, children }: PageHeaderProps) => {
           onClick={onPresentRecentTransactions}
           title={TranslateString(1202, 'Recent transactions')}
         > */}
-          {/* <HistoryIcon width="24px" color="currentColor" /> */}
+        {/* <HistoryIcon width="24px" color="currentColor" /> */}
         {/* </IconButton> */}
       </Flex>
       {children && <Text mt="16px">{children}</Text>}
