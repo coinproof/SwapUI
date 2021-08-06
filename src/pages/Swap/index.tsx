@@ -279,12 +279,6 @@ const Swap = () => {
         tokens={urlLoadedTokens}
         onConfirm={handleConfirmTokenWarning}
       />
-      <SyrupWarningModal
-        isOpen={transactionWarning.selectedToken === 'SYRUP'}
-        transactionType={transactionWarning.purchaseType}
-        onConfirm={handleConfirmWarning}
-      />
-      <SafeMoonWarningModal isOpen={transactionWarning.selectedToken === 'SAFEMOON'} onConfirm={handleConfirmWarning} />
       <CardNav />
       <AppBody >
         <Wrapper id="swap-page">
