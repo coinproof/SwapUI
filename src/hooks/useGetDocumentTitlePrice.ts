@@ -3,8 +3,8 @@ import useGetPriceData from './useGetPriceData'
 import { NOVA } from '../constants'
 
 const useGetDocumentTitlePrice = () => {
-  const priceData = useGetPriceData()
-  const novaPriceUsd = (priceData && priceData.data) ? parseFloat(priceData.data[NOVA.address].price) : 0
+  const novaPriceUsd = useGetPriceData()
+  // const novaPriceUsd = (priceData && priceData.data) ? parseFloat(priceData.data[NOVA.address].price) : 0
 
   const novaPriceUsdString =
     Number.isNaN(novaPriceUsd) || novaPriceUsd === 0

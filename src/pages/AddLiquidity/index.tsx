@@ -430,7 +430,7 @@ export default function AddLiquidity({
                         ? 'danger'
                         : 'primary'
                     }
-                   
+                    style={{width:"100%"}}
                   >
                     {error ?? 'Supply'}
                   </Button>

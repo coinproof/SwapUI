@@ -16,9 +16,10 @@ const Menu: React.FC = (props) => {
   const { login, logout } = useAuth()
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
-  const priceData = useGetPriceData()
-  const novaPriceUsd = (priceData && priceData.data) ? Number(priceData.data[NOVA.address].price) : undefined
-  const profile = useGetLocalProfile()
+  const novaPriceUsd  = useGetPriceData()
+  
+  // const novaPriceUsd = (priceData && priceData.data) ? Number(priceData.data[NOVA.address].price) : undefined
+  // const profile = useGetLocalProfile()
 
   return (
     // @ts-ignore: Unreachable code error
@@ -33,7 +34,7 @@ const Menu: React.FC = (props) => {
       langs={languageList}
       setLang={setSelectedLanguage}
       novaPriceUsd={novaPriceUsd}
-      profile={profile}
+      // profile={profile}
       {...props}
     />
   )

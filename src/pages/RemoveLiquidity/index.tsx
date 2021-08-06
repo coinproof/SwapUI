@@ -123,7 +123,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' },
     ]
     const domain = {
-      name: 'BecoSwap LPs',
+      name: 'ShibaNova LPs',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
@@ -643,6 +643,7 @@ export default function RemoveLiquidity({
                       variant={approval === ApprovalState.APPROVED || signatureData !== null ? 'success' : 'primary'}
                       disabled={approval !== ApprovalState.NOT_APPROVED || signatureData !== null}
                       mr="8px"
+                      style={{width:"50%"}}
                     >
                       {approval === ApprovalState.PENDING ? (
                         <Dots>Approving</Dots>

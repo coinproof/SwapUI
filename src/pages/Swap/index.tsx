@@ -286,8 +286,9 @@ const Swap = () => {
       />
       <SafeMoonWarningModal isOpen={transactionWarning.selectedToken === 'SAFEMOON'} onConfirm={handleConfirmWarning} />
       <CardNav />
-      <AppBody>
+      <AppBody >
         <Wrapper id="swap-page">
+        
           <ConfirmSwapModal
             isOpen={showConfirm}
             trade={trade}
@@ -305,6 +306,7 @@ const Swap = () => {
             title={TranslateString(8, 'Exchange')}
             description={TranslateString(1192, 'Trade tokens in an instant')}
           />
+          
           <CardBody>
             <AutoColumn gap="md">
               <CurrencyInputPanel
