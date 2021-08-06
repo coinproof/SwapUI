@@ -224,7 +224,7 @@ export default function AddLiquidity({
             {`${currencies[Field.CURRENCY_A]?.symbol}/${currencies[Field.CURRENCY_B]?.symbol} Pool Tokens`}
           </UIKitText>
         </Row>
-        <UIKitText small textAlign="left" padding="8px 0 0 0 " style={{ fontStyle: 'italic' }}>
+        <UIKitText small text-Align="left" padding="8px 0 0 0 " style={{ fontStyle: 'italic' }}>
           {`Output is estimated. If the price changes by more than ${
             allowedSlippage / 100
           }% your transaction will revert.`}
@@ -379,7 +379,7 @@ export default function AddLiquidity({
               )}
 
               {!account ? (
-                <ConnectWalletButton width="100%" />
+                <ConnectWalletButton  />
               ) : (
                 <AutoColumn gap="md">
                   {(approvalA === ApprovalState.NOT_APPROVED ||
@@ -430,7 +430,7 @@ export default function AddLiquidity({
                         ? 'danger'
                         : 'primary'
                     }
-                    width="100%"
+                   
                   >
                     {error ?? 'Supply'}
                   </Button>

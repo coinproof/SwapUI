@@ -347,7 +347,7 @@ export default function RemoveLiquidity({
           </RowFixed>
         </RowBetween>
 
-        <Text small color="textSubtle" textAlign="left" padding="12px 0 0 0" style={{ fontStyle: 'italic' }}>
+        <Text small color="textSubtle" text-Align="left" padding="12px 0 0 0" style={{ fontStyle: 'italic' }}>
           {`Output is estimated. If the price changes by more than ${
             allowedSlippage / 100
           }% your transaction will revert.`}
@@ -488,28 +488,28 @@ export default function RemoveLiquidity({
                       <Flex justifyContent="space-around">
                         <Button
                           variant="tertiary"
-                          scale="sm"
+                          size="sm"
                           onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '25')}
                         >
                           25%
                         </Button>
                         <Button
                           variant="tertiary"
-                          scale="sm"
+                          size="sm"
                           onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '50')}
                         >
                           50%
                         </Button>
                         <Button
                           variant="tertiary"
-                          scale="sm"
+                          size="sm"
                           onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '75')}
                         >
                           75%
                         </Button>
                         <Button
                           variant="tertiary"
-                          scale="sm"
+                          size="sm"
                           onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '100')}
                         >
                           {TranslateString(166, 'Max')}
@@ -635,7 +635,7 @@ export default function RemoveLiquidity({
               )}
               <div style={{ position: 'relative' }}>
                 {!account ? (
-                  <ConnectWalletButton width="100%" />
+                  <ConnectWalletButton  />
                 ) : (
                   <RowBetween>
                     <Button

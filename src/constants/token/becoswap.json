@@ -7,16 +7,16 @@
     "patch": 0
   },
   "tags": {},
-  "logoURI": "https://exchange.becoswap.com/images/becoswap.png",
+  "logoURI": "https://swap.shibanova.io/logo.png",
   "keywords": ["becoswap", "default"],
   "tokens": [
     {
-      "name": "Beco Token",
-      "symbol": "BECO",
-      "address": "0x8fe4d28476cdd43d36a12eb47dc3243c1925f263",
+      "name": "ShibaNova Token",
+      "symbol": "NOVA",
+      "address": "0xDb2B70a73C587513089DaAB4d38Ff6f35dA5eD63",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://exchange.becoswap.com/images/coins/0x8fe4d28476cdd43d36a12eb47dc3243c1925f263.png"
+      "logoURI": "https://exchange.becoswap.com/images/coins/NOVA.png"
     },
     {
       "name": "WBNB Token",

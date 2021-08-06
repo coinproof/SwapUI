@@ -332,7 +332,7 @@ const Swap = () => {
                         onSwitchTokens()
                       }}
                       style={{ borderRadius: '50%' }}
-                      scale="sm"
+                      size="sm"
                     >
                       <ArrowDownIcon color="primary" width="24px" />
                     </IconButton>
@@ -398,9 +398,9 @@ const Swap = () => {
             </AutoColumn>
             <BottomGrouping>
               {!account ? (
-                <ConnectWalletButton width="100%" />
+                <ConnectWalletButton  />
               ) : showWrap ? (
-                <Button disabled={Boolean(wrapInputError)} onClick={onWrap} width="100%">
+                <Button disabled={Boolean(wrapInputError)} onClick={onWrap} >
                   {wrapInputError ??
                     (wrapType === WrapType.WRAP ? 'Wrap' : wrapType === WrapType.UNWRAP ? 'Unwrap' : null)}
                 </Button>
@@ -470,7 +470,7 @@ const Swap = () => {
                   id="swap-button"
                   disabled={!isValid || (priceImpactSeverity > 3 && !isExpertMode) || !!swapCallbackError}
                   variant={isValid && priceImpactSeverity > 2 && !swapCallbackError ? 'danger' : 'primary'}
-                  width="100%"
+                  style={{width:'100%'}}
                 >
                   {swapInputError ||
                     (priceImpactSeverity > 3 && !isExpertMode

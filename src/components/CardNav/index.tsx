@@ -12,7 +12,7 @@ function Nav({ activeIndex = 0 }: { activeIndex?: number }) {
   const TranslateString = useI18n()
   return (
     <StyledNav>
-      <ButtonMenu activeIndex={activeIndex} scale="sm" variant="subtle">
+      <ButtonMenu activeIndex={activeIndex} size="sm" variant="primary">
         <ButtonMenuItem id="swap-nav-link" to="/swap" as={Link}>
           {TranslateString(1142, 'Swap')}
         </ButtonMenuItem>
@@ -22,7 +22,7 @@ function Nav({ activeIndex = 0 }: { activeIndex?: number }) {
         <ButtonMenuItem
           id="pool-nav-link"
           as="a"
-          href="https://www.binance.org/en/bridge?utm_source=Becoswap"
+          href="https://www.binance.org/en/bridge"
           target="_blank"
           rel="noreferrer noopener"
         >

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Text, PancakeToggle, useMatchBreakpoints } from '@becoswap-libs/uikit'
+import { Box, Flex, Text, useMatchBreakpoints } from '@becoswap-libs/uikit'
 import { useAudioModeManager } from 'state/user/hooks'
 
 type AudioSettingModalProps = {
@@ -15,9 +15,9 @@ const AudioSetting = ({ translateString }: AudioSettingModalProps) => {
       <Flex alignItems="center" mb="8px">
         <Text bold>{translateString(999, 'Audio')}</Text>
       </Flex>
-      <Box>
+      {/* <Box>
         <PancakeToggle scale={isSm || isXs ? 'sm' : 'md'} checked={audioPlay} onChange={toggleSetAudioMode} />
-      </Box>
+      </Box> */}
     </Box>
   )
 }

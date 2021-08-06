@@ -47,7 +47,7 @@ const RecentTransactionsModal = ({ onDismiss = defaultOnDismiss, translateString
           <Text mb="8px" bold>
             Please connect your wallet to view your recent transactions
           </Text>
-          <Button variant="tertiary" scale="sm" onClick={onDismiss}>
+          <Button variant="tertiary" size="sm" onClick={onDismiss}>
             Close
           </Button>
         </Flex>
@@ -57,7 +57,7 @@ const RecentTransactionsModal = ({ onDismiss = defaultOnDismiss, translateString
           <Text mb="8px" bold>
             No recent transactions
           </Text>
-          <Button variant="tertiary" scale="sm" onClick={onDismiss}>
+          <Button variant="tertiary" size="sm" onClick={onDismiss}>
             Close
           </Button>
         </Flex>

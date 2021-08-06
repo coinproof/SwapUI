@@ -57,3 +57,5 @@ export const allLanguages = [
   UK,
   VI
 ]
+
+export const languageList = Object.values(allLanguages)

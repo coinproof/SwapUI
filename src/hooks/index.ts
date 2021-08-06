@@ -1,5 +1,6 @@
 import { Web3Provider } from '@ethersproject/providers'
 import { ChainId } from '@becoswap-libs/sdk'
+// @ts-ignore: Unreachable code error
 import { connectorLocalStorageKey } from '@becoswap-libs/uikit'
 import { useWeb3React as useWeb3ReactCore } from '@web3-react/core'
 // eslint-disable-next-line import/no-unresolved

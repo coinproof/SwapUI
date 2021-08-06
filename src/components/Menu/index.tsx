@@ -7,9 +7,9 @@ import useGetPriceData from 'hooks/useGetPriceData'
 import useTheme from 'hooks/useTheme'
 import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import useAuth from 'hooks/useAuth'
-import { languageList } from 'constants/localization/languages'
+import { languageList } from 'constants/localisation/languageCodes'
 import links from './config'
-import { BECO } from '../../constants'
+import { NOVA } from '../../constants'
 
 const Menu: React.FC = (props) => {
   const { account } = useWeb3React()
@@ -17,10 +17,11 @@ const Menu: React.FC = (props) => {
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
   const priceData = useGetPriceData()
-  const cakePriceUsd = (priceData && priceData.data) ? Number(priceData.data[BECO.address].price) : undefined
+  const novaPriceUsd = (priceData && priceData.data) ? Number(priceData.data[NOVA.address].price) : undefined
   const profile = useGetLocalProfile()
 
   return (
+    // @ts-ignore: Unreachable code error
     <UikitMenu
       links={links}
       account={account as string}
@@ -31,7 +32,7 @@ const Menu: React.FC = (props) => {
       currentLang={selectedLanguage?.code || ''}
       langs={languageList}
       setLang={setSelectedLanguage}
-      cakePriceUsd={cakePriceUsd}
+      novaPriceUsd={novaPriceUsd}
       profile={profile}
       {...props}
     />
@@ -39,3 +40,4 @@ const Menu: React.FC = (props) => {
 }
 
 export default Menu
+

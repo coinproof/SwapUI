@@ -100,7 +100,7 @@ export default function AddressInputPanel({
         <InputContainer>
           <AutoColumn gap="md">
             <RowBetween>
-              <Text color="textSubtle" fontWeight={500} fontSize="14px">
+              <Text color="textSubtle" font-Weight={500} font-Size="14px">
                 {TranslateString(1138, 'Recipient')}
               </Text>
               {address && chainId && (

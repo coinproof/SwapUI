@@ -1,5 +1,5 @@
 import React, { createContext } from 'react'
-import { Language } from '@becoswap-libs/uikit'
+// import { Language } from '@becoswap-libs/uikit'
 
 export interface LanguageObject {
   code: string
@@ -7,7 +7,7 @@ export interface LanguageObject {
 }
 interface LanguageState {
   selectedLanguage: LanguageObject
-  setSelectedLanguage: (langObject: Language) => void
+  setSelectedLanguage: React.Dispatch<React.SetStateAction<LanguageObject>>
   translatedLanguage: LanguageObject
   setTranslatedLanguage: React.Dispatch<React.SetStateAction<LanguageObject>>
 }

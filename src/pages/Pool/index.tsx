@@ -81,13 +81,13 @@ export default function Pool() {
 
               {!account ? (
                 <LightCard padding="40px">
-                  <Text color="textDisabled" textAlign="center">
+                  <Text color="textDisabled" text-Align="center">
                     {TranslateString(156, 'Connect to a wallet to view your liquidity.')}
                   </Text>
                 </LightCard>
               ) : v2IsLoading ? (
                 <LightCard padding="40px">
-                  <Text color="textDisabled" textAlign="center">
+                  <Text color="textDisabled" text-Align="center">
                     <Dots>Loading</Dots>
                   </Text>
                 </LightCard>
@@ -99,7 +99,7 @@ export default function Pool() {
                 </>
               ) : (
                 <LightCard padding="40px">
-                  <Text color="textDisabled" textAlign="center">
+                  <Text color="textDisabled" text-Align="center">
                     {TranslateString(104, 'No liquidity found.')}
                   </Text>
                 </LightCard>
