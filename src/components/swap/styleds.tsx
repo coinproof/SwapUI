@@ -1,11 +1,11 @@
 import { transparentize } from 'polished'
 import React from 'react'
 import { AlertTriangle } from 'react-feather'
-import { Text } from '@becoswap-libs/uikit'
+import { Card, Text } from '@becoswap-libs/uikit'
 import styled, { css } from 'styled-components'
 import { AutoColumn } from '../Column'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(Card)`
   position: relative;
 `
 

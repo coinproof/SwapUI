@@ -108,7 +108,7 @@ const SlippageToleranceSettings = ({ translateString }: SlippageToleranceSetting
               placeholder="5%"
               value={value}
               onChange={handleChange}
-              isWarning={error !== null}
+              // isWarning={error !== null}
             />
           </Option>
           <Option>

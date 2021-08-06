@@ -15,8 +15,6 @@ import confirmPriceImpactWithoutFee from 'components/swap/confirmPriceImpactWith
 import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from 'components/swap/styleds'
 import TradePrice from 'components/swap/TradePrice'
 import TokenWarningModal from 'components/TokenWarningModal'
-import SyrupWarningModal from 'components/SyrupWarningModal'
-import SafeMoonWarningModal from 'components/SafeMoonWarningModal'
 import ProgressSteps from 'components/ProgressSteps'
 
 import { INITIAL_ALLOWED_SLIPPAGE } from 'constants/index'
@@ -81,11 +79,11 @@ const Swap = () => {
   // swap state
   const { independentField, typedValue, recipient } = useSwapState()
   const { v2Trade, currencyBalances, parsedAmount, currencies, inputError: swapInputError } = useDerivedSwapInfo()
-  const { wrapType, execute: onWrap, inputError: wrapInputError } = useWrapCallback(
-    currencies[Field.INPUT],
-    currencies[Field.OUTPUT],
-    typedValue
-  )
+  const {
+    wrapType,
+    execute: onWrap,
+    inputError: wrapInputError,
+  } = useWrapCallback(currencies[Field.INPUT], currencies[Field.OUTPUT], typedValue)
   const showWrap: boolean = wrapType !== WrapType.NOT_APPLICABLE
   const trade = showWrap ? undefined : v2Trade
 
@@ -280,9 +278,8 @@ const Swap = () => {
         onConfirm={handleConfirmTokenWarning}
       />
       <CardNav />
-      <AppBody >
-        <Wrapper id="swap-page">
-        
+      <AppBody>
+        <Wrapper gradientBorder id="swap-page">
           <ConfirmSwapModal
             isOpen={showConfirm}
             trade={trade}
@@ -298,9 +295,8 @@ const Swap = () => {
           />
           <PageHeader
             title={TranslateString(8, 'Exchange')}
-            description={TranslateString(1192, 'We suggest using at least 2% slippage to swap NOVA.')}
+            description={TranslateString(1192, 'Use at least 2% slippage to swap NOVA')}
           />
-          
           <CardBody>
             <AutoColumn gap="md">
               <CurrencyInputPanel
@@ -394,9 +390,9 @@ const Swap = () => {
             </AutoColumn>
             <BottomGrouping>
               {!account ? (
-                <ConnectWalletButton  />
+                <ConnectWalletButton />
               ) : showWrap ? (
-                <Button disabled={Boolean(wrapInputError)} onClick={onWrap} >
+                <Button disabled={Boolean(wrapInputError)} onClick={onWrap}>
                   {wrapInputError ??
                     (wrapType === WrapType.WRAP ? 'Wrap' : wrapType === WrapType.UNWRAP ? 'Unwrap' : null)}
                 </Button>
@@ -466,7 +462,7 @@ const Swap = () => {
                   id="swap-button"
                   disabled={!isValid || (priceImpactSeverity > 3 && !isExpertMode) || !!swapCallbackError}
                   variant={isValid && priceImpactSeverity > 2 && !swapCallbackError ? 'danger' : 'primary'}
-                  style={{width:'100%'}}
+                  style={{ width: '100%' }}
                 >
                   {swapInputError ||
                     (priceImpactSeverity > 3 && !isExpertMode
