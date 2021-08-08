@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Menu as UikitMenu} from '@becoswap-libs/uikit'
+import { Menu as UikitMenu } from '@becoswap-libs/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useGetPriceData from 'hooks/useGetPriceData'
@@ -16,8 +16,8 @@ const Menu: React.FC = (props) => {
   const { login, logout } = useAuth()
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
-  const novaPriceUsd  = useGetPriceData()
-  
+  const novaPriceUsd = useGetPriceData()
+
   // const novaPriceUsd = (priceData && priceData.data) ? Number(priceData.data[NOVA.address].price) : undefined
   // const profile = useGetLocalProfile()
 
@@ -34,6 +34,7 @@ const Menu: React.FC = (props) => {
       langs={languageList}
       setLang={setSelectedLanguage}
       novaPriceUsd={novaPriceUsd}
+      priceLink="https://dex.guru/token/0x56e344be9a7a7a1d27c854628483efd67c11214f-bsc"
       // profile={profile}
       {...props}
     />
@@ -41,4 +42,3 @@ const Menu: React.FC = (props) => {
 }
 
 export default Menu
-
