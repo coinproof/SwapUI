@@ -62,7 +62,7 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
             <QuestionHelper
               text={TranslateString(
                 230,
-                'For each trade a 0.3% fee is paid. 0.3% goes to liquidity providers.'
+                'For each trade a 0.2% fee is paid. 0.15% goes to rewards.'
               )}
             />
           </RowFixed>
