@@ -1,7 +1,9 @@
 import React, { useCallback, useContext, useEffect } from 'react'
 import { X } from 'react-feather'
+// eslint-disable-next-line import/no-duplicates 
 import { useSpring } from 'react-spring/web'
 import styled, { ThemeContext } from 'styled-components'
+// eslint-disable-next-line import/no-duplicates 
 import { animated } from 'react-spring'
 import { PopupContent } from '../../state/application/actions'
 import { useRemovePopup } from '../../state/application/hooks'

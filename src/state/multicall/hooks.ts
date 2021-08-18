@@ -184,10 +184,13 @@ export function useSingleContractMultipleData(
 
   const latestBlockNumber = useBlockNumber()
 
+  /* eslint-disable*/
   return useMemo(() => {
-    return results.map((result) => toCallState(result, contract?.interface, fragment, latestBlockNumber))
+    return results.map((result) => toCallState(result, (contract?.interface as any), fragment, latestBlockNumber))
   }, [fragment, contract, results, latestBlockNumber])
+  
 }
+/* eslint-enable */
 
 export function useMultipleContractSingleData(
   addresses: (string | undefined)[],
@@ -252,6 +255,6 @@ export function useSingleCallResult(
   const latestBlockNumber = useBlockNumber()
 
   return useMemo(() => {
-    return toCallState(result, contract?.interface, fragment, latestBlockNumber)
+    return toCallState(result, (contract?.interface as any), fragment, latestBlockNumber)
   }, [result, contract, fragment, latestBlockNumber])
 }
