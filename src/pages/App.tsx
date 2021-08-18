@@ -3,6 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 // import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
 // import { Language } from '@becoswap-libs/uikit'
+import Bubbles from 'components/Bubbles/Bubbles'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
@@ -153,6 +154,8 @@ const CACHE_KEY = 'becoSwapLanguage'
             </TranslationsContext.Provider>
           </LanguageContext.Provider>
         </AppWrapper>
+        <Bubbles numberOfBubbles={55} />
+
       </HashRouter>
     </Suspense>
   )
