@@ -1,24 +1,25 @@
 export default [
   {
     label: 'Dashboard',
-    icon: 'HomeIcon',
     href: 'https://app.shibanova.io/',
   },
   {
     label: 'Exchange',
-    icon: 'TradeIcon',
     href: '/',
     button: true,
   },
   {
     label: 'Farms',
-    icon: 'FarmIcon',
     href: 'https://app.shibanova.io/farms',
   },
   {
     label: 'Pools',
-    icon: 'PoolIcon',
     href: 'https://app.shibanova.io/pools',
+  },
+  {
+    label: "Audits",
+    icon: "AuditIcon",
+    href: "https://docs.shibanova.io/shibanova-documentation/security/audits",
   },
   {
     label: 'Socials',
