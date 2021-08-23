@@ -18,7 +18,7 @@ export default [
   },
   {
     label: "Audits",
-    icon: "AuditIcon",
+    icon: "ShibaNovaAuditIcon",
     href: "https://docs.shibanova.io/shibanova-documentation/security/audits",
   },
   {
