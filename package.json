@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@becoswap-libs/sdk": "shibanova/shibanova-swap-sdk-mainnet",
-    "@becoswap-libs/uikit": "ShibaNova/shibanova-uikit#4d91ee1477fcb272884b89c535dab334919fc15e",
+    "@becoswap-libs/uikit": "ShibaNova/shibanova-uikit#20cf06c01522f8e958c7daa789e2db672c70b440",
     "@binance-chain/bsc-connector": "^1.0.0",
     "@crowdin/crowdin-api-client": "^1.8.16",
     "@ethersproject/experimental": "^5.0.1",
