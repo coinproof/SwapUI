@@ -19,6 +19,14 @@
       "logoURI": "https://swap.shibanova.io/images/coins/NOVA.png"
     },
     {
+      "name": "CrudeOil Finance",
+      "symbol": "CRUDE",
+      "address": "0x8db702d9d561921c45be8df38830a653e4bc0299",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://swap.shibanova.io/images/coins/crude.png"
+    },
+    {
       "name": "Wrapped BNB",
       "symbol": "WBNB",
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
