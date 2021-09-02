@@ -100,11 +100,11 @@ export default function SwapModalFooter({
         </RowBetween>
         <RowBetween>
           <RowFixed>
-            <Text fontSize="14px">{TranslateString(228, 'Liquidity Provider Fee')}</Text>
+            <Text fontSize="14px">{TranslateString(999, 'Rewards Fee')}</Text>
             <QuestionHelper
               text={TranslateString(
                 999,
-                'For each trade a 0.2% fee is paid. 0.2% goes to liquidity providers.'
+                'For each trade a 0.2% fee is paid. 0.15% goes to Rewards'
               )}
             />
           </RowFixed>
