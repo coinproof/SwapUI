@@ -125,11 +125,13 @@ const CACHE_KEY = 'becoSwapLanguage'
     <Suspense fallback={null}>
       <HashRouter>
         <AppWrapper>
+        
           <LanguageContext.Provider
             value={{ selectedLanguage, setSelectedLanguage, translatedLanguage, setTranslatedLanguage }}
           >
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               <Menu>
+              
                 <BodyWrapper>
                   <Popups />
                   <Web3ReactManager>
@@ -153,10 +155,12 @@ const CACHE_KEY = 'becoSwapLanguage'
               </Menu>
             </TranslationsContext.Provider>
           </LanguageContext.Provider>
+          
         </AppWrapper>
-        <Bubbles numberOfBubbles={55} />
+       
 
       </HashRouter>
+      <Bubbles numberOfBubbles={55} />
     </Suspense>
   )
 }

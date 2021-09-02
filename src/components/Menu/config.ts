@@ -22,6 +22,20 @@ export default [
     href: "https://docs.shibanova.io/shibanova-documentation/security/audits",
   },
   {
+    label: "Vault Partners",
+    icon: "MoreIcon",
+    items: [
+      {
+        label: "CrudeOil",        
+        href: "https://app.crudeoil.finance/#/app/vaults",
+      },
+      {
+        label: "More Coming Soon!",
+        href: "/#",
+      },
+    ],
+  },
+  {
     label: 'Socials',
     icon: 'MoreIcon',
     items: [
