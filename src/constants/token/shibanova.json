@@ -27,6 +27,14 @@
       "logoURI": "https://swap.shibanova.io/images/coins/crude.png"
     },
     {
+      "name": "AutoShark Finance",
+      "symbol": "JAWS",
+      "address": "0xdd97ab35e3c0820215bc85a395e13671d84ccba2",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://swap.shibanova.io/images/coins/0xdd97ab35e3c0820215bc85a395e13671d84ccba2.png"
+    },
+    {
       "name": "Wrapped BNB",
       "symbol": "WBNB",
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
