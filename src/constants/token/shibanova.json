@@ -44,8 +44,8 @@
     },
     {
       "name": "Ronin Gamez",
-      "symbol": "RONIN",
-      "address": "",
+      "symbol": "RONINGMZ",
+      "address": "0x980b37a82B60A32965b6e56356D14E0410ea440F",
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://swap.shibanova.io/images/coins/ronin.png"
