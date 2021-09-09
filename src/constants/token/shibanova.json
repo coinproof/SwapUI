@@ -43,6 +43,14 @@
       "logoURI": "https://swap.shibanova.io/images/coins/plx.png"
     },
     {
+      "name": "Ronin Gamez",
+      "symbol": "RONIN",
+      "address": "",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://swap.shibanova.io/images/coins/ronin.png"
+    },
+    {
       "name": "Wrapped BNB",
       "symbol": "WBNB",
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
