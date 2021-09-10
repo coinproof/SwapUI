@@ -28,7 +28,7 @@ const PageHeader = ({ title, description, children }: PageHeaderProps) => {
 
   return (
     <StyledPageHeader>
-      <Flex alignItems="center">
+      <Flex alignItems="center" flexWrap="wrap">
         <Details>
           <Heading mb="8px">{title}</Heading>
           {description && (
@@ -38,7 +38,7 @@ const PageHeader = ({ title, description, children }: PageHeaderProps) => {
           )}
         </Details>
         <IconButton
-          style={{ width: 0, boxShadow: 'none !important' }}
+          style={{ flexShrink: 0, boxShadow: 'none !important' }}
           variant="text"
           onClick={onPresentSettings}
           title={TranslateString(1200, 'Settings')}
