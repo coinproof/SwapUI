@@ -16,7 +16,7 @@
       "address": "0x56E344bE9A7a7A1d27C854628483Efd67c11214F",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://swap.shibanova.io/images/coins/NOVA.png"
+      "logoURI": "https://swap.shibanova.io/images/coins/0x56E344bE9A7a7A1d27C854628483Efd67c11214F.png"
     },
     {
       "name": "CrudeOil Finance",
@@ -24,7 +24,7 @@
       "address": "0x8db702d9d561921c45be8df38830a653e4bc0299",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://swap.shibanova.io/images/coins/crude.png"
+      "logoURI": "https://swap.shibanova.io/images/coins/0x8db702d9d561921c45be8df38830a653e4bc0299.png"
     }, 
     {
       "name": "AutoShark Finance",
@@ -40,7 +40,7 @@
       "address": "0x57022edd5c7ed7b6bd870488853fe961dfdd3fb6",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://swap.shibanova.io/images/coins/plx.png"
+      "logoURI": "https://swap.shibanova.io/images/coins/0x57022edd5c7ed7b6bd870488853fe961dfdd3fb6.png"
     },
     {
       "name": "Wrapped BNB",
