@@ -1,6 +1,6 @@
 {
-  "name": "@becoswap/interface",
-  "description": "Becoswap Interface",
+  "name": "@shibanova/swapui",
+  "description": "NovaDex",
   "homepage": ".",
   "private": true,
   "dependencies": {
