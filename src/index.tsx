@@ -36,6 +36,8 @@ ReactDOM.render(
       <App />
       <Footer />
     </Providers>
+    
   </StrictMode>,
   document.getElementById('root')
+  
 )
