@@ -4,6 +4,7 @@ import styled from 'styled-components'
 // import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
 // import { Language } from '@becoswap-libs/uikit'
 import Bubbles from 'components/Bubbles/Bubbles'
+import Footer from "components/Footer"
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
@@ -17,7 +18,6 @@ import { RedirectPathToSwapOnly } from './Swap/redirects'
 import { EN, allLanguages } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
-
 import Menu from '../components/Menu'
 import useGetDocumentTitlePrice from '../hooks/useGetDocumentTitlePrice'
 
@@ -150,9 +150,11 @@ const CACHE_KEY = 'becoSwapLanguage'
                       <Route component={RedirectPathToSwapOnly} />
                     </Switch>
                   </Web3ReactManager>
+                  
                   <Marginer />
                 </BodyWrapper>
               </Menu>
+              
             </TranslationsContext.Provider>
           </LanguageContext.Provider>
           
@@ -160,7 +162,7 @@ const CACHE_KEY = 'becoSwapLanguage'
        
 
       </HashRouter>
-      <Bubbles numberOfBubbles={55} />
+      {/* <Bubbles numberOfBubbles={55} /> */}
     </Suspense>
   )
 }

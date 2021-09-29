@@ -1,6 +1,7 @@
 import React, { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
 import { ResetCSS } from '@becoswap-libs/uikit'
+import Footer from "components/Footer"
 import GlobalStyle from './style/Global'
 import App from './pages/App'
 import ApplicationUpdater from './state/application/updater'
@@ -33,6 +34,7 @@ ReactDOM.render(
       <ResetCSS />
       <GlobalStyle />
       <App />
+      <Footer />
     </Providers>
   </StrictMode>,
   document.getElementById('root')
