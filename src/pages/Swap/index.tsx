@@ -269,11 +269,11 @@ const Swap = () => {
     },
     [onCurrencySelection, checkForWarning]
   )
-const novatoken = "0x56E344bE9A7a7A1d27C854628483Efd67c11214F"
+
   return (
     <>
       <TokenWarningModal
-        isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning && !novatoken}
+        isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning}
         tokens={urlLoadedTokens}
         onConfirm={handleConfirmTokenWarning}
       />
