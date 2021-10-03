@@ -271,6 +271,7 @@ const Swap = () => {
   )
 
   return (
+    // ts-ignore
     <>
       <TokenWarningModal
         isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning}
@@ -392,7 +393,9 @@ const Swap = () => {
               {!account ? (
                 <ConnectWalletButton />
               ) : showWrap ? (
-                <Button disabled={Boolean(wrapInputError)} onClick={onWrap}>
+                <Button disabled={Boolean(wrapInputError)} onClick={onWrap}
+                // ts-ignore react/jsx-boolean-valute
+                fullWidth>
                   {wrapInputError ??
                     (wrapType === WrapType.WRAP ? 'Wrap' : wrapType === WrapType.UNWRAP ? 'Unwrap' : null)}
                 </Button>

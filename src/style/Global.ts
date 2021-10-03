@@ -8,19 +8,19 @@ const GlobalStyle = createGlobalStyle`
 
 body {
 
-  background-image: url('/images/dexmobilebg2.png');
+  background-image: url('/images/dexmobilebg2.jpg');
   background-size: 100% auto;
  background-repeat: repeat-y;
  
 
  img {
    height: auto;
-   max-width: 100%;
+   max-width: 100%; 
  }
  // @ts-ignore: Unreachable code error
 //  
  @media only screen and (min-width: 650px){
-   background-image: url('/images/dexbgbig.png');
+   background-image: url('/images/dexbgbig.jpg');
    background-size: 100% auto;
    background-repeat: repeat-y;
  }
