@@ -34,7 +34,7 @@ const Menu: React.FC = (props) => {
       langs={languageList}
       setLang={setSelectedLanguage}
       novaPriceUsd={novaPriceUsd}
-      priceLink="https://poocoin.app/tokens/0x56e344be9a7a7a1d27c854628483efd67c11214f"
+      priceLink="https://poocoin.app/tokens/0x82d6e409438e9c2eaed8ceec4bd95918cbd17c87"
       // profile={profile}
       {...props}
     />

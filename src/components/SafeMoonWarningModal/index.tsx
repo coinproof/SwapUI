@@ -31,16 +31,17 @@ export default function SafeMoonWarningModal({ isOpen, onConfirm }: { isOpen: bo
         <AutoColumn gap="lg">
           <AutoRow gap="6px">
             <StyledWarningIcon />
-            <Text>Notice for trading SafeMoon</Text>
+            <Text>Notice for trading FOMOBABY</Text>
           </AutoRow>
           <>
             <Text>
-              To trade SAFEMOON, you must click on the settings icon and{' '}
-              <strong>set your slippage tolerance to 12%+</strong>
+              To trade FOMOBABY, you must click on the settings icon and{' '}
+              <strong>set your slippage tolerance to 10%+</strong>
             </Text>
-            <Text>This is because SafeMoon taxes a 10% fee on each transaction.</Text>
-            <Text>• 5% fee = redistributed to all existing holders</Text>
-            <Text>• 5% fee = used to add liquidity</Text>
+            <Text>This is because $FOMOBABY taxes a 9% fee on each transaction.</Text>
+            <Text>• 5% fee = to marketing wallet</Text>
+            <Text>• 2% fee = used to add liquidity</Text>
+            <Text>• 2% fee = goes to lottery wallet</Text>
           </>
           <RowBetween>
             <div>
