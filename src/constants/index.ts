@@ -7,12 +7,8 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const NOVA = new Token(ChainId.MAINNET, '0xDb2B70a73C587513089DaAB4d38Ff6f35dA5eD63', 18, 'BECO', 'BecoSwap Token')
+export const FOMOBABY = new Token(ChainId.MAINNET, '0x82d6e409438e9c2eaed8ceec4bd95918cbd17c87', 9, 'FOMOBABY', 'FOMO BABy')
 export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
-export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
-export const BUSD = new Token(ChainId.MAINNET, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
-export const BTCB = new Token(ChainId.MAINNET, '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', 18, 'BTCB', 'Binance BTC')
-export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059fF775485246999027B3197955', 18, 'USDT', 'Tether USD')
 export const UST = new Token(
   ChainId.MAINNET,
   '0x23396cF899Ca06c4472205fC903bDB4de249D6fC',
@@ -29,14 +25,14 @@ export const ETH = new Token(
 )
 
 const WETH_ONLY: ChainTokenList = {
-  [ChainId.MAINNET]: [WETH[ChainId.MAINNET], BUSD, USDT, ETH, NOVA],
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET], ETH, FOMOBABY],
   [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
 }
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, BTCB, USDT, UST, ETH, NOVA, WBNB],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], UST, ETH, FOMOBABY, WBNB],
 }
 
 /**
@@ -50,20 +46,18 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT, NOVA],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], FOMOBABY],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, BTCB, USDT, NOVA],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], FOMOBABY],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
-    [NOVA, WBNB],
-    [BUSD, USDT],
-    [DAI, USDT],
+    [FOMOBABY, WBNB],
   ],
 }
 
